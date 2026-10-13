@@ -2,11 +2,26 @@
 //crear una funcion que solicite dos arreglos numericos, debera
 //retornar la suma de ambos arreglos siempre que tengan el mismo numero /
 //de elementos, de lo contrario, devolver array vacio[]
+//funcion 3:
+//crear una funcion que solicite dos arreglos numericos
+//retornar la suma de ambos arreglos si tienen la misma cantidad
+//de elementos, de lo contrario devolver []
+function sumarArreglos(arreglo1, arreglo2) {
+  let resultado = []
 
-//let A =[5,4,1,8,9] 
-//let B =[10,2,6,1,0]
-//let C =[15,6,7,9,9] return
-// return[]
+  if (arreglo1.length == arreglo2.length) {
+    arreglo1.forEach((numero, i) => {
+      resultado.push(numero + arreglo2[i])
+    })
+  } else {
+    return []
+  }
+
+  return resultado
+}
+
+//Test
+console.log(sumarArreglos([5,4,1,8,9], [10,2,6,0]))
 
 //funciom 4:
 //crear una funcion que solicite un numero positivo y retorne todos los divisores 
@@ -15,4 +30,3 @@
 
 //ejemplo: 22 -> [1,2,11,22], ejemplo 40 -> [1,2,4,5,8,10,20,40]
 
-//test

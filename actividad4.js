@@ -21,12 +21,33 @@ function sumarArreglos(arreglo1, arreglo2) {
 }
 
 //Test
-console.log(sumarArreglos([5,4,1,8,9], [10,2,6,0]))
+//console.log(sumarArreglos([5,4,1,8,9], [10,2,6,0]))
+
+console.log("-------------------")
 
 //funciom 4:
 //crear una funcion que solicite un numero positivo y retorne todos los divisores 
 //desde 1 hasta el numero que hayas indicado. El resultado se obtiene
 //como arreglo
+//funcion 4:
+//crear una funcion que solicite un numero positivo y retorne todos los divisores
+//desde 1 hasta el numero que hayas indicado. El resultado se obtiene
+//como arreglo
 
+function divisores(numero) {
+  let resultado = []
+
+  for (let i = 1; i <= numero; i++) {
+    if (numero % i == 0) {
+      resultado.push(i)
+    }
+  }
+
+  return resultado
+}
+
+//Test
+console.log("Los numeros divisores del primer numero:",divisores(22))
+console.log("Los numeros divisores del segundo numero:",divisores(30))
 //ejemplo: 22 -> [1,2,11,22], ejemplo 40 -> [1,2,4,5,8,10,20,40]
 

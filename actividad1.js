@@ -5,8 +5,8 @@ const pelicula = {
   idiomas: ["Ingles","Español"],
   duracionMin:145,
   generos: [	"Aventuras", "fantasía", "acción", "ciencia ficción", "cine de superhéroes", "comedia"],
-  presupuesto: $225000000,
-  recaudacion: $2507000000,
+  presupuesto: 225000000,
+  recaudacion: 2507000000,
   elenco:[
     {nombre: "Tom Holland",personaje: "Peter Parker",rol: "Heroe"},
     {nombre: "Zendaya",personaje: "Jean Grey",rol: "Interés romántico de Peter Parker "},
@@ -21,3 +21,5 @@ const pelicula = {
   direccion: ["Destin Daniel Cretton"],
   escritores: ["Chris McKenna", "Erik Sommers"]
 }
+
+console.log(pelicula);

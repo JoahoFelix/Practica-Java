@@ -26,7 +26,7 @@ function tarea(numeros = [1,3,6,8,2,9]) {
 
 const resultado = tarea();
 
-console.log("Los numeros pares son:", resultado.pares, "y los impares son:", resultado.impares);
+//console.log("Los numeros pares son:", resultado.pares, "y los impares son:", resultado.impares);
 
 //funcion 2:
 //escribir una funcion que retorne true|false dependendiendo si el valor de entrada 
@@ -34,8 +34,12 @@ console.log("Los numeros pares son:", resultado.pares, "y los impares son:", res
 //de hasta 5 digitos (99999)
 //Test , demostracion, console.log
 function capicua(numeros) {
-  let original = numeros
+  let original = "" + numeros
   let invertido = ""
+
+  if (numeros > 99999) {
+    return false
+  }
 
   for (let i = original.length - 1; i >= 0; i--) {
     invertido += original[i]
@@ -49,5 +53,4 @@ function capicua(numeros) {
 }
 
 //Test
-
-console.log(capicua(1234321))
+console.log(capicua(222))

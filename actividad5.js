@@ -9,7 +9,14 @@
 
     console.log("Faltan", horas, "horas,", minutos,
                 "minutos y", segundos, "segundos para terminar el dia")
-})()
+})();
+
+
 //crear una funcion autoejecutable que solicite un numero (expresado en segundos ) y nos
 //devuelva un saludo, despues del tiempo indicado 
 //setTimeowt
+(function(segundos) {
+    setTimeout(function() {
+        console.log("Hola, buenas noches")
+    }, segundos * 1000)
+})(5);

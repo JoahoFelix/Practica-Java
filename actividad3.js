@@ -26,7 +26,7 @@ function tarea(numeros = [1,3,6,8,2,9]) {
 
 const resultado = tarea();
 
-//console.log("Los numeros pares son:", resultado.pares, "y los impares son:", resultado.impares);
+console.log("Los numeros pares son:", resultado.pares, "y los impares son:", resultado.impares);
 
 //funcion 2:
 //escribir una funcion que retorne true|false dependendiendo si el valor de entrada 
@@ -54,3 +54,4 @@ function capicua(numeros) {
 
 //Test
 console.log(capicua(222))
+console.log/(capicua(1234321))
